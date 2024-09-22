@@ -3,24 +3,46 @@
  * @see https://v0.dev/t/TIvi1FyJVO5
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
-
+import Link from "next/link";
+import Image from "next/image";
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <MountainIcon className="h-6 w-6" />
+        <Link
+          href="#"
+          className="flex items-center justify-center"
+          prefetch={false}
+        >
+          <Image
+            src="/placeholder.svg"
+            alt="AI Solutions PH"
+            width={40}
+            height={40}
+            className="h-6 w-6"
+          />
           <span className="sr-only">AI Solutions PH</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Services
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             About
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Contact
           </Link>
         </nav>
@@ -35,8 +57,8 @@ export default function Component() {
                     Unleash the Power of Generative AI
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    AI Solutions PH provides cutting-edge generative AI services to help you innovate and transform your
-                    business.
+                    AI Solutions PH provides cutting-edge generative AI services
+                    to help you innovate and transform your business.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -71,10 +93,13 @@ export default function Component() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Conversational AI Chatbots</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                    Conversational AI Chatbots
+                  </h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Engage your customers with intelligent and personalized chatbots powered by the latest advancements
-                    in natural language processing.
+                    Engage your customers with intelligent and personalized
+                    chatbots powered by the latest advancements in natural
+                    language processing.
                   </p>
                 </div>
                 <Link
@@ -107,10 +132,13 @@ export default function Component() {
               />
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Generative Web Apps</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                    Generative Web Apps
+                  </h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Empower your users with innovative web applications that leverage the latest advancements in
-                    generative AI to create unique and personalized content.
+                    Empower your users with innovative web applications that
+                    leverage the latest advancements in generative AI to create
+                    unique and personalized content.
                   </p>
                 </div>
                 <Link
@@ -129,10 +157,13 @@ export default function Component() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Personalized AI Models</h2>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                    Personalized AI Models
+                  </h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    Take your AI-powered applications to the next level with our premium service of fine-tuning
-                    user-provided images to create personalized AI models.
+                    Take your AI-powered applications to the next level with our
+                    premium service of fine-tuning user-provided images to
+                    create personalized AI models.
                   </p>
                 </div>
                 <Link
@@ -155,35 +186,26 @@ export default function Component() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2024 AI Solutions PH. All rights reserved.</p>
+        <p className="text-xs text-muted-foreground">
+          &copy; 2024 AI Solutions PH. All rights reserved.
+        </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-xs hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Terms of Service
           </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
+          <Link
+            href="#"
+            className="text-xs hover:underline underline-offset-4"
+            prefetch={false}
+          >
             Privacy
           </Link>
         </nav>
       </footer>
     </div>
-  )
-}
-
-function MountainIcon(props: any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
-  )
+  );
 }
